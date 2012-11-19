@@ -14,8 +14,32 @@
 
 @implementation AppDelegate
 
+- (void) customizeInteface {
+    
+    UIImage *barImage = [[UIImage imageNamed:@"bar_back_06_44s.jpg"]resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    // Это для горзонтальной ориеттации iPhone, нам в целом не нужно
+//    UIImage *gradientImage32 = [[UIImage imageNamed:@"bar_back_32.jpg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    
+    [[UINavigationBar appearance] setBackgroundImage:barImage forBarMetrics:UIBarMetricsDefault];
+//    [[UINavigationBar appearance] setBackgroundImage:gradientImage32 forBarMetrics:UIBarMetricsLandscapePhone];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor whiteColor],UITextAttributeTextColor,
+      [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],UITextAttributeTextShadowColor,
+      [NSValue valueWithUIOffset:UIOffsetMake(0, -1)], UITextAttributeTextShadowOffset,
+      [UIFont fontWithName:@"Helvetica-Bold" size:16.0], UITextAttributeFont,
+      nil]];
+    
+    [[UIBarButtonItem appearance] setTintColor:[UIColor brownColor]];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [self customizeInteface];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {

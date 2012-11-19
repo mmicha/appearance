@@ -22,6 +22,24 @@
 		4CD19B2B165A57CC00E78B7E /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B29165A57CC00E78B7E /* MasterViewController_iPad.xib */; };
 		4CD19B2E165A57CC00E78B7E /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B2C165A57CC00E78B7E /* DetailViewController_iPhone.xib */; };
 		4CD19B31165A57CC00E78B7E /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B2F165A57CC00E78B7E /* DetailViewController_iPad.xib */; };
+		4CD19B38165A584200E78B7E /* test03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B37165A584200E78B7E /* test03.jpg */; };
+		4CD19B47165A5E0900E78B7E /* test01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B41165A5E0800E78B7E /* test01.jpg */; };
+		4CD19B48165A5E0900E78B7E /* test02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B42165A5E0800E78B7E /* test02.jpg */; };
+		4CD19B49165A5E0900E78B7E /* test04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B43165A5E0800E78B7E /* test04.jpg */; };
+		4CD19B4A165A5E0900E78B7E /* test05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B44165A5E0900E78B7E /* test05.jpg */; };
+		4CD19B4B165A5E0900E78B7E /* test06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B45165A5E0900E78B7E /* test06.jpg */; };
+		4CD19B4C165A5E0900E78B7E /* test07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B46165A5E0900E78B7E /* test07.jpg */; };
+		4CD19B56165A692E00E78B7E /* bar_back_01_44s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B4F165A692900E78B7E /* bar_back_01_44s.jpg */; };
+		4CD19B57165A692E00E78B7E /* bar_back_02_44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B50165A692900E78B7E /* bar_back_02_44.jpg */; };
+		4CD19B58165A692E00E78B7E /* bar_back_03_44s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B51165A692A00E78B7E /* bar_back_03_44s.jpg */; };
+		4CD19B59165A692E00E78B7E /* bar_back_04_44s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B52165A692B00E78B7E /* bar_back_04_44s.jpg */; };
+		4CD19B5A165A692E00E78B7E /* bar_back_05_44s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B53165A692B00E78B7E /* bar_back_05_44s.jpg */; };
+		4CD19B5B165A692E00E78B7E /* bar_back_06_44s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B54165A692D00E78B7E /* bar_back_06_44s.jpg */; };
+		4CD19B5C165A692E00E78B7E /* bar_back_07_44s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B55165A692D00E78B7E /* bar_back_07_44s.jpg */; };
+		4CD19B60165A6B1800E78B7E /* MRCustomTableVIewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD19B5E165A6B1600E78B7E /* MRCustomTableVIewCell.m */; };
+		4CD19B61165A6B1800E78B7E /* MRCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B5F165A6B1700E78B7E /* MRCustomTableViewCell.xib */; };
+		4CD19B64165A6B2800E78B7E /* ramka.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B62165A6B2700E78B7E /* ramka.png */; };
+		4CD19B65165A6B2800E78B7E /* ramka@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD19B63165A6B2800E78B7E /* ramka@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +64,25 @@
 		4CD19B2A165A57CC00E78B7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		4CD19B2D165A57CC00E78B7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		4CD19B30165A57CC00E78B7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		4CD19B37165A584200E78B7E /* test03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test03.jpg; sourceTree = "<group>"; };
+		4CD19B41165A5E0800E78B7E /* test01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test01.jpg; sourceTree = "<group>"; };
+		4CD19B42165A5E0800E78B7E /* test02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test02.jpg; sourceTree = "<group>"; };
+		4CD19B43165A5E0800E78B7E /* test04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test04.jpg; sourceTree = "<group>"; };
+		4CD19B44165A5E0900E78B7E /* test05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test05.jpg; sourceTree = "<group>"; };
+		4CD19B45165A5E0900E78B7E /* test06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test06.jpg; sourceTree = "<group>"; };
+		4CD19B46165A5E0900E78B7E /* test07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test07.jpg; sourceTree = "<group>"; };
+		4CD19B4F165A692900E78B7E /* bar_back_01_44s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar_back_01_44s.jpg; sourceTree = "<group>"; };
+		4CD19B50165A692900E78B7E /* bar_back_02_44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar_back_02_44.jpg; sourceTree = "<group>"; };
+		4CD19B51165A692A00E78B7E /* bar_back_03_44s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar_back_03_44s.jpg; sourceTree = "<group>"; };
+		4CD19B52165A692B00E78B7E /* bar_back_04_44s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar_back_04_44s.jpg; sourceTree = "<group>"; };
+		4CD19B53165A692B00E78B7E /* bar_back_05_44s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar_back_05_44s.jpg; sourceTree = "<group>"; };
+		4CD19B54165A692D00E78B7E /* bar_back_06_44s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar_back_06_44s.jpg; sourceTree = "<group>"; };
+		4CD19B55165A692D00E78B7E /* bar_back_07_44s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar_back_07_44s.jpg; sourceTree = "<group>"; };
+		4CD19B5D165A6B1600E78B7E /* MRCustomTableVIewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCustomTableVIewCell.h; sourceTree = "<group>"; };
+		4CD19B5E165A6B1600E78B7E /* MRCustomTableVIewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCustomTableVIewCell.m; sourceTree = "<group>"; };
+		4CD19B5F165A6B1700E78B7E /* MRCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCustomTableViewCell.xib; sourceTree = "<group>"; };
+		4CD19B62165A6B2700E78B7E /* ramka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ramka.png; sourceTree = "<group>"; };
+		4CD19B63165A6B2800E78B7E /* ramka@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ramka@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +129,22 @@
 		4CD19B0E165A57CC00E78B7E /* backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				4CD19B62165A6B2700E78B7E /* ramka.png */,
+				4CD19B63165A6B2800E78B7E /* ramka@2x.png */,
+				4CD19B41165A5E0800E78B7E /* test01.jpg */,
+				4CD19B42165A5E0800E78B7E /* test02.jpg */,
+				4CD19B43165A5E0800E78B7E /* test04.jpg */,
+				4CD19B44165A5E0900E78B7E /* test05.jpg */,
+				4CD19B45165A5E0900E78B7E /* test06.jpg */,
+				4CD19B46165A5E0900E78B7E /* test07.jpg */,
+				4CD19B37165A584200E78B7E /* test03.jpg */,
+				4CD19B4F165A692900E78B7E /* bar_back_01_44s.jpg */,
+				4CD19B50165A692900E78B7E /* bar_back_02_44.jpg */,
+				4CD19B51165A692A00E78B7E /* bar_back_03_44s.jpg */,
+				4CD19B52165A692B00E78B7E /* bar_back_04_44s.jpg */,
+				4CD19B53165A692B00E78B7E /* bar_back_05_44s.jpg */,
+				4CD19B54165A692D00E78B7E /* bar_back_06_44s.jpg */,
+				4CD19B55165A692D00E78B7E /* bar_back_07_44s.jpg */,
 				4CD19B17165A57CC00E78B7E /* AppDelegate.h */,
 				4CD19B18165A57CC00E78B7E /* AppDelegate.m */,
 				4CD19B20165A57CC00E78B7E /* MasterViewController.h */,
@@ -102,6 +155,9 @@
 				4CD19B29165A57CC00E78B7E /* MasterViewController_iPad.xib */,
 				4CD19B2C165A57CC00E78B7E /* DetailViewController_iPhone.xib */,
 				4CD19B2F165A57CC00E78B7E /* DetailViewController_iPad.xib */,
+				4CD19B5D165A6B1600E78B7E /* MRCustomTableVIewCell.h */,
+				4CD19B5E165A6B1600E78B7E /* MRCustomTableVIewCell.m */,
+				4CD19B5F165A6B1700E78B7E /* MRCustomTableViewCell.xib */,
 				4CD19B0F165A57CC00E78B7E /* Supporting Files */,
 			);
 			path = backgrounds;
@@ -180,6 +236,23 @@
 				4CD19B2B165A57CC00E78B7E /* MasterViewController_iPad.xib in Resources */,
 				4CD19B2E165A57CC00E78B7E /* DetailViewController_iPhone.xib in Resources */,
 				4CD19B31165A57CC00E78B7E /* DetailViewController_iPad.xib in Resources */,
+				4CD19B38165A584200E78B7E /* test03.jpg in Resources */,
+				4CD19B47165A5E0900E78B7E /* test01.jpg in Resources */,
+				4CD19B48165A5E0900E78B7E /* test02.jpg in Resources */,
+				4CD19B49165A5E0900E78B7E /* test04.jpg in Resources */,
+				4CD19B4A165A5E0900E78B7E /* test05.jpg in Resources */,
+				4CD19B4B165A5E0900E78B7E /* test06.jpg in Resources */,
+				4CD19B4C165A5E0900E78B7E /* test07.jpg in Resources */,
+				4CD19B56165A692E00E78B7E /* bar_back_01_44s.jpg in Resources */,
+				4CD19B57165A692E00E78B7E /* bar_back_02_44.jpg in Resources */,
+				4CD19B58165A692E00E78B7E /* bar_back_03_44s.jpg in Resources */,
+				4CD19B59165A692E00E78B7E /* bar_back_04_44s.jpg in Resources */,
+				4CD19B5A165A692E00E78B7E /* bar_back_05_44s.jpg in Resources */,
+				4CD19B5B165A692E00E78B7E /* bar_back_06_44s.jpg in Resources */,
+				4CD19B5C165A692E00E78B7E /* bar_back_07_44s.jpg in Resources */,
+				4CD19B61165A6B1800E78B7E /* MRCustomTableViewCell.xib in Resources */,
+				4CD19B64165A6B2800E78B7E /* ramka.png in Resources */,
+				4CD19B65165A6B2800E78B7E /* ramka@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +267,7 @@
 				4CD19B19165A57CC00E78B7E /* AppDelegate.m in Sources */,
 				4CD19B22165A57CC00E78B7E /* MasterViewController.m in Sources */,
 				4CD19B25165A57CC00E78B7E /* DetailViewController.m in Sources */,
+				4CD19B60165A6B1800E78B7E /* MRCustomTableVIewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

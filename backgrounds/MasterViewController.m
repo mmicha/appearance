@@ -7,7 +7,7 @@
 //
 
 #import "MasterViewController.h"
-
+#import "MRCustomTableVIewCell.h"
 #import "DetailViewController.h"
 
 @interface MasterViewController () {
@@ -67,23 +67,31 @@
 {
     return _objects.count;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 164;
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MRCustomTableVIewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[MRCustomTableVIewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"MRCustomTableViewCell" owner:self options:nil] objectAtIndex:0];
+
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
     }
 
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    cell.subjectFullNameLabel.text = @"Full Name";
+    cell.subjectShotDateLabel.text = [[NSDate date] description];
+//    cell.subjectPhotoView.image = mrdoc.subjectPhoto;
+    cell.subjectDescription.text = @"some description goes here";
     return cell;
 }
 
