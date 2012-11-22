@@ -38,7 +38,7 @@
 - (void) customizeInteface {
 //resizableImageWithCapInsets применяется чтобы растайлить короткий подкладочный рисунок. Это рисунок правращен в бесшовную текстуру заранее
 //в фотошопе с помощью фильтра Offset.
-    UIImage *barImage = [[UIImage imageNamed:@"navbar1.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    UIImage *barImage = [[UIImage imageNamed:@"navbarTiled.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     [[UINavigationBar appearance] setBackgroundImage:barImage forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
