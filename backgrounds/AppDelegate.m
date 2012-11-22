@@ -7,41 +7,39 @@
 //
 
 #import "AppDelegate.h"
-
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
-
 #import <QuartzCore/QuartzCore.h>
 
+//Это категория UINavigationController, просто целиком прописана здесь, а не отдельными файлами, для удобства
 @interface UINavigationController (NavbarWithShadow)
 @end
 
 @implementation UINavigationController (NavbarWithShadow)
 
 - (void)viewDidLoad {
-    CGColorRef darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.8].CGColor;
-    CGColorRef lightColor = [UIColor clearColor].CGColor;
-    CGFloat statusBarHeight = 0.0;
-    if (![self.visibleViewController isKindOfClass:[UITableViewController class]])
-        statusBarHeight = 20.0;
-    CGFloat bottomLevel = self.navigationBar.frame.origin.y + self.navigationBar.frame.size.height - statusBarHeight;
-        
-    CAGradientLayer *newShadow = [[CAGradientLayer alloc] init];
-    newShadow.frame = CGRectMake(0,bottomLevel, self.view.frame.size.width, 6.0);
-    newShadow.colors = [NSArray arrayWithObjects:(__bridge id)(darkColor), (__bridge id)lightColor, nil];
-    newShadow.type = kCAGradientLayerAxial;
-    [self.view.layer addSublayer:newShadow];
+    
+    CGFloat bottomLevel = self.navigationBar.frame.size.height;
+    
+    CAGradientLayer *shadow = [[CAGradientLayer alloc] init];
+
+    CGColorRef dark = [[UIColor blackColor] colorWithAlphaComponent:0.8].CGColor;
+    CGColorRef light = [UIColor clearColor].CGColor;
+    shadow.frame = CGRectMake(0,bottomLevel, self.view.frame.size.width, 7.0);
+    shadow.colors = [NSArray arrayWithObjects:(__bridge id)(dark), (__bridge id)light, nil];
+    shadow.type = kCAGradientLayerAxial;
+    [self.view.layer addSublayer:shadow];
     [super viewDidLoad];
 }
 @end
-
+//=================================== конец категории ==============================================
 @implementation AppDelegate
 
 - (void) customizeInteface {
-    UIImage *barImage = [[UIImage imageNamed:@"navbar1.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];    
+//resizableImageWithCapInsets применяется чтобы растайлить короткий подкладочный рисунок. Это рисунок правращен в бесшовную текстуру заранее
+//в фотошопе с помощью фильтра Offset.
+    UIImage *barImage = [[UIImage imageNamed:@"navbar1.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     [[UINavigationBar appearance] setBackgroundImage:barImage forBarMetrics:UIBarMetricsDefault];
-        
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
       [UIColor whiteColor],UITextAttributeTextColor,
