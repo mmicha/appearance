@@ -12,17 +12,36 @@
 
 #import "DetailViewController.h"
 
+#import <QuartzCore/QuartzCore.h>
+
+@interface UINavigationController (NavbarWithShadow)
+@end
+
+@implementation UINavigationController (NavbarWithShadow)
+
+- (void)viewDidLoad {
+    CGColorRef darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.8].CGColor;
+    CGColorRef lightColor = [UIColor clearColor].CGColor;
+    CGFloat statusBarHeight = 0.0;
+    if (![self.visibleViewController isKindOfClass:[UITableViewController class]])
+        statusBarHeight = 20.0;
+    CGFloat bottomLevel = self.navigationBar.frame.origin.y + self.navigationBar.frame.size.height - statusBarHeight;
+        
+    CAGradientLayer *newShadow = [[CAGradientLayer alloc] init];
+    newShadow.frame = CGRectMake(0,bottomLevel, self.view.frame.size.width, 6.0);
+    newShadow.colors = [NSArray arrayWithObjects:(__bridge id)(darkColor), (__bridge id)lightColor, nil];
+    newShadow.type = kCAGradientLayerAxial;
+    [self.view.layer addSublayer:newShadow];
+    [super viewDidLoad];
+}
+@end
+
 @implementation AppDelegate
 
 - (void) customizeInteface {
-    
-    UIImage *barImage = [[UIImage imageNamed:@"bar_back_06_44s.jpg"]resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    // Это для горзонтальной ориеттации iPhone, нам в целом не нужно
-//    UIImage *gradientImage32 = [[UIImage imageNamed:@"bar_back_32.jpg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    
+    UIImage *barImage = [[UIImage imageNamed:@"navbar1.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];    
     [[UINavigationBar appearance] setBackgroundImage:barImage forBarMetrics:UIBarMetricsDefault];
-//    [[UINavigationBar appearance] setBackgroundImage:gradientImage32 forBarMetrics:UIBarMetricsLandscapePhone];
-    
+        
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
       [UIColor whiteColor],UITextAttributeTextColor,
@@ -30,8 +49,8 @@
       [NSValue valueWithUIOffset:UIOffsetMake(0, -1)], UITextAttributeTextShadowOffset,
       [UIFont fontWithName:@"Helvetica-Bold" size:16.0], UITextAttributeFont,
       nil]];
-    
-    [[UIBarButtonItem appearance] setTintColor:[UIColor brownColor]];
+    UIColor *buttonTintColor = [UIColor colorWithRed:65.0/255.0 green:72.0/255.0 blue:77.0/255.0 alpha:1.0];
+    [[UIBarButtonItem appearance] setTintColor:buttonTintColor];
 }
 
 
